@@ -1973,10 +1973,10 @@ ul li:last-child .sportsmagazine-blog-list-wrap {
     width: 100%;
 }
 .sportsmagazine-subheader {
-    background: url(extra-images/sub-header.jpg);
+    background: url(images/aaa.jpeg);
     padding: 82px 0 132px;
     position: relative;
-    background-position: center;
+    background-position: top;
     text-align: center;
 }
 .sportsmagazine-subheader:before {
@@ -3002,6 +3002,15 @@ ul li:last-child .sportsmagazine-blog-list-wrap {
 }
 .sportsmagazine-contact-form form p textarea{
     height: 150px;
+    font-size: 10px;
+    padding: 12px 21px 0px 16px;
+    color: #505050; 
+    border: 1px solid #ececec;
+    background-color: transparent;
+    width: 93%;
+    border-right: transparent;
+}
+.sportsmagazine-contact-form form p select{ 
     font-size: 10px;
     padding: 12px 21px 0px 16px;
     color: #505050; 

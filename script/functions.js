@@ -510,10 +510,10 @@ function init() {
         zoom: 11,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.6700, -73.9400), // New York
+        center: new google.maps.LatLng(-2.175138, 30.159248), // New York
 
         // How you would like to style the map. 
-        // This is where you would paste any style found on Snazzy Maps.
+        // This is where you would paste any style found on Nyamata, Rwanda Maps.
         styles: [{"featureType":"road.highway","elementType":"labels","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"off"}]},{"featureType":"landscape.natural","elementType":"all","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"on"}]},{"featureType":"road","elementType":"all","stylers":[{"hue":"#ffe94f"},{"saturation":100},{"lightness":4},{"visibility":"on"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"hue":"#ffe94f"},{"saturation":100},{"lightness":4},{"visibility":"on"}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#333333"},{"saturation":-100},{"lightness":-74},{"visibility":"off"}]}]
     };
 
@@ -526,8 +526,29 @@ function init() {
 
     // Let's also add a marker while we're at it
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(40.6700, -73.9400),
+        position: new google.maps.LatLng(-2.175138, 30.159248),
         map: map,
-        title: 'Snazzy!'
+        title: 'Nyamata, Rwanda!'
     });
 }
+
+/*
+google.maps.event.addDomListener(window, 'load', init);
+
+function init() {
+    var mapOptions = {
+        zoom: 13,
+        center: new google.maps.LatLng(-2.175138, 30.159248), // Nyamata, Rwanda
+        styles: [/* your styles here /]
+    };
+
+    var mapElement = document.getElementById('map');
+    var map = new google.maps.Map(mapElement, mapOptions);
+
+    var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(-2.175138, 30.159248),
+        map: map,
+        title: 'Nyamata, Rwanda'
+    });
+}
+*/
