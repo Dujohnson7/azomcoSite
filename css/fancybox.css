@@ -254,6 +254,14 @@
 	background: rgba(0, 0, 0, .8);
 }
 
+/* Example: Make sure Fancybox is above header */
+.fancybox-overlay,
+.fancybox-container,
+.fancybox-bg,
+.fancybox-inner {
+  z-index: 9999 !important;
+}
+
 /*Retina graphics!*/
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 	   only screen and (min--moz-device-pixel-ratio: 1.5),
